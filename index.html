@@ -255,7 +255,23 @@ background:  #a59762;
 color: white;
 animation: pulse 1.5s infinite;
 }
+    
+.place-img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: block;
 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+    transition: 0.4s;
+}
+
+.place-img:hover {
+    transform: scale(1.03);
+}
+    
 .timeline {
     text-align: center;
     padding: 80px 20px;
@@ -491,7 +507,7 @@ animation: pulse 1.5s infinite;
 }
 
     .welcome-box p {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 1.6;
     }
 
@@ -510,11 +526,11 @@ animation: pulse 1.5s infinite;
     }
 
     .vk-box p {
-    font-size: 16px;
+    font-size: 19px;
     }
     /* ТЕКСТ */
     p {
-        font-size: 16px;
+        font-size: 19px;
         margin: 10px;
     }
 
@@ -523,7 +539,12 @@ animation: pulse 1.5s infinite;
     }
 
     h3 {
-        font-size: 20px;
+        font-size: 25px;
+    }
+    
+    .content p {
+    margin: 10px 0 0;
+    font-size: 18px;
     }
 
 }
@@ -581,6 +602,7 @@ animation: pulse 1.5s infinite;
 <section>
     <div class="section-box reveal">
     <h2>Место проведения</h2>
+    <img src="images/mesto.jpg" class="place-img">
     <a href="https://yandex.ru/maps/org/miles/1335160588/?ll=44.478796%2C48.671875&z=17.08" target="_blank" class="button">
         Посмотреть место на карте
     </a>
