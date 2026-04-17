@@ -801,7 +801,20 @@ btn.addEventListener('click', () => {
 
     isPlaying = !isPlaying;
 });
+    /* ===== SCROLL ANIMATION ===== */
+    const reveals = document.querySelectorAll('.reveal, .section-box');
 
+    function revealOnScroll() {
+      const trigger = window.innerHeight * 0.85;
+    reveals.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < trigger) el.classList.add('show');
+    });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+    
     /* ===== COUNTDOWN ===== */
     const countdown = document.getElementById("countdown");
     const weddingDate = new Date("2026-09-19T14:00:00").getTime();
